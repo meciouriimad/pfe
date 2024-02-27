@@ -15,7 +15,11 @@ h3{
 p{
   font-size: large;
 }
+a:hover{
+  text-decoration: underline;
+}
 a{
+  color: inherit;
   text-decoration: none;
 }
 html {
@@ -31,9 +35,9 @@ body {
 }
 .wrapper {
   max-width: 800px;
-  top: 3rem;
+  top: 7rem;
   position: relative;
-  padding: 20px 100px;
+  padding: 4px 100px;
 }
 .wrapper .parent-tab,
 .wrapper .child-tab {
