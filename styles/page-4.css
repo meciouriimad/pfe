@@ -1,0 +1,462 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 144rem;
+}.desktop-6-J3Q {
+  width: 100%;
+  height: 118.9rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.desktop-6-J3Q .detail-prestation-pXY {
+  width: 28.9rem;
+  height: 4.4rem;
+  position: absolute;
+  left: 8.4rem;
+  top: 79.3rem;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.desktop-6-J3Q .component-4-tGW {
+  width: 144rem;
+  height: 108.1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E {
+  box-sizing: border-box;
+  padding: 2.2rem 8.7rem 1.35rem 6.464rem;
+  width: 144rem;
+  height: 9.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 133, 0, 0.7099999785);
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-k6z2-UkW {
+  margin-right: 10.9968rem;
+  width: 78.1355rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-k6z2-UkW .frame-29-zTx {
+  box-sizing: border-box;
+  padding-left: 23.5rem;
+  width: 50.6rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 27.5355rem;
+  top: 2.45rem;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-k6z2-UkW .frame-29-zTx .auto-group-s2sg-HCA {
+  width: 100%;
+  height: 2.4rem;
+  position: relative;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-k6z2-UkW .frame-29-zTx .auto-group-s2sg-HCA .frame-15-byY {
+  width: 13.2rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #2d2e2e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-k6z2-UkW .frame-29-zTx .auto-group-s2sg-HCA .hotels-car-here-Tkr {
+  width: 16.1rem;
+  height: 2rem;
+  position: absolute;
+  left: 11rem;
+  top: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #2d2e2e;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-k6z2-UkW .logo-8MC {
+  width: 40rem;
+  height: 5rem;
+  position: absolute;
+  left: 1.9355rem;
+  top: 0.3rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-6eyk-dok {
+  margin: 1.2rem 0rem 1.771rem 0rem;
+  box-sizing: border-box;
+  padding-left: 2.2032rem;
+  width: 39.7032rem;
+  height: calc(100% - 2.9706rem);
+  flex-shrink: 0;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-6eyk-dok .search-umG {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0.0642rem 0.1283rem rgba(0, 0, 0, 0.200000003), 0 0.0064rem 0.0192rem rgba(0, 0, 0, 0.1000000015);
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-6eyk-dok .search-umG .content-Tnn {
+  box-sizing: border-box;
+  padding: 0.642rem 1.373rem 0.642rem 1.026rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0.1283rem;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-6eyk-dok .search-umG .content-Tnn .magnifyingglass-N94 {
+  margin-right: 1.5397rem;
+  width: 1.7963rem;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1548rem;
+  font-weight: 500;
+  line-height: 2.7777776768;
+  color: #000000;
+  font-family: SF Pro Display, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-6eyk-dok .search-umG .content-Tnn .placeholder-label-QrS {
+  margin: 0rem 27.318rem 0rem 0rem;
+  font-size: 1.0906rem;
+  font-weight: 400;
+  line-height: 1.2941176728;
+  letter-spacing: 0.0321rem;
+  color: #000000;
+  font-family: Roboto, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.desktop-6-J3Q .component-4-tGW .navbar-10-16E .auto-group-6eyk-dok .search-umG .content-Tnn .close-gJA {
+  margin-bottom: 0rem;
+  width: 0.8459rem;
+  height: 0.8459rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.desktop-6-J3Q .component-4-tGW .rectangle-28-tQE {
+  width: 144rem;
+  height: 99.3rem;
+  position: absolute;
+  left: 0;
+  top: 8.8rem;
+  background-color: #ffffff;
+}
+.desktop-6-J3Q .component-4-tGW .group-60-p2z {
+  width: 117.1rem;
+  height: 28.7rem;
+  position: absolute;
+  left: 9.1rem;
+  top: 43.1rem;
+}
+.desktop-6-J3Q .component-4-tGW .group-60-p2z .ralisation-des-tudes-lithologiques-en-utilisanttoutes-les-techniques-classiques-XTC {
+  margin-bottom: 5.2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.desktop-6-J3Q .component-4-tGW .group-60-p2z .ralisation-des-tudes-de-palo-environnement-dedpts-lchelle-du-bassin-ou-lchelle-rgionale-bxr {
+  margin-bottom: 3.9rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.desktop-6-J3Q .component-4-tGW .group-60-p2z .reconstitution-de-la-chronologie-relative-auxdiffrentes-phases-de-cimentation-et-de-dissolution-dans-le-cadre-de-ltudediagntique-des-rservoirs-5d8 {
+  margin-bottom: 1.8rem;
+  max-width: 117.1rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+}
+.desktop-6-J3Q .component-4-tGW .group-60-p2z .dfinition-des-potentialits-des-rservoirs-et-larpartition-de-leur-qualit-pour-rduire-les-risques-lis-lexploration-et-audveloppement-kcn {
+  max-width: 116.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+}
+.desktop-6-J3Q .component-4-tGW .sont-accrdits-suivant-lanorme-internationale-nf-iso-cei-17025-2aJ {
+  width: 70rem;
+  height: 2.8rem;
+  position: absolute;
+  left: 9.15rem;
+  top: 18.7rem;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.desktop-6-J3Q .component-4-tGW .nos-laboratoires-75x {
+  width: 29.1rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 8.9rem;
+  top: 14.6rem;
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.desktop-6-J3Q .component-4-tGW .sdimentologie-bWv {
+  width: 28.1rem;
+  height: 4.4rem;
+  position: absolute;
+  left: 58rem;
+  top: 30.6rem;
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.desktop-6-J3Q .component-4-tGW .group-63-Uai {
+  box-sizing: border-box;
+  padding: 1.1rem 2.012rem 1rem 7.1rem;
+  width: 49.2rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 8.4rem;
+  top: 88.7rem;
+  display: flex;
+  align-items: center;
+  border: solid 0.4rem #000000;
+  background-color: rgba(255, 133, 0, 0.4900000095);
+}
+.desktop-6-J3Q .component-4-tGW .group-63-Uai .clastiques-et-reservoirs-vhc {
+  margin-right: 2.2rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.desktop-6-J3Q .component-4-tGW .group-63-Uai .vector-2Er {
+  margin-bottom: 0.012rem;
+  width: 2.788rem;
+  height: 2.788rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.desktop-6-J3Q .component-4-tGW .group-62-hLz {
+  box-sizing: border-box;
+  padding: 1.1rem 2.012rem 1rem 8.7rem;
+  width: 49.2rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 8.4rem;
+  top: 96rem;
+  display: flex;
+  align-items: center;
+  border: solid 0.4rem #000000;
+  background-color: rgba(255, 133, 0, 0.4900000095);
+}
+.desktop-6-J3Q .component-4-tGW .group-62-hLz .etudes-mineralogiques-y3c {
+  margin-right: 3.9rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1.2125;
+  color: #000000;
+  font-family: Inter, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.desktop-6-J3Q .component-4-tGW .group-62-hLz .vector-5sL {
+  margin-bottom: 0.012rem;
+  width: 2.788rem;
+  height: 2.788rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #333333;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 100px 50px;
+            padding: 100px 50px;
+            height: 600px;
+            background-color: #ffffff;
+        }
+
+        .container .custom-card {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 350px;
+            max-width: 100%;
+            height: 300px;
+            background: #FFF;
+            border-radius: 20px;
+            transition: 0.5s;
+            box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+        }
+
+        .container .custom-card:hover {
+            height: 220px;
+        }
+
+        .container .custom-card .img-box {
+            position: absolute;
+            top: 20px;
+            width: 300px;
+            height: 220px;
+            background: #333;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .container .custom-card:hover .img-box {
+            top: -100px;
+            scale: 0.75;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+        }
+
+        .container .custom-card .img-box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container .custom-card .custom-content {
+            position: absolute;
+            top: 252px;
+            width: 100%;
+            height: 35px;
+            padding: 0 30px;
+            text-align: center;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .container .custom-card:hover .custom-content {
+            top: 130px;
+            height: 250px;
+        }
+
+        .container .custom-card .custom-content h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333333;
+        }
+
+        .container .custom-card .custom-content p {
+            color: #333;
+        }
+
+        .container .custom-card .custom-content a {
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            padding: 12px 25px;
+            text-decoration: none;
+            background: #181818;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .container .custom-card .custom-content a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 480px) {
+            .container .custom-card {
+                width: 230px;
+                border-radius: 15px;
+            }
+
+            .container .custom-card .img-box {
+                width: 185px;
+                border-radius: 10px;
+            }
+
+            .container .custom-card .custom-content p {
+                font-size: 0.8rem;
+            }
+
+            .container .custom-card .custom-content a {
+                font-size: 0.9rem;
+            }
+        }
