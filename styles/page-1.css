@@ -460,7 +460,7 @@ body {
         
         .img-container {
           display: flex;
-          transition: transform 300ms ease-in-out;
+          transition: transform 400ms ease-in-out;
         }
         .fa-solid {
           cursor: pointer;
