@@ -17,9 +17,10 @@
 }
 .info{
   display: flex;
+  font: caption;
   flex-direction: column;
   top: 6rem;
-  left: 25rem;
+  left: 28rem;
   max-width: 100rem;
   position: relative;
 }
@@ -60,11 +61,11 @@ section{
   height: 95px;
 }
 .wrapper {
-  max-width: 800px;
+  max-width: 640px;
   top: 8.2rem;
   position: relative;
-  left: 16rem;
-  padding: 4px 100px;
+  left: 28rem;
+  padding: 4px;
 }
 .wrapper .parent-tab,
 .wrapper .child-tab {
