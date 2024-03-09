@@ -12,37 +12,111 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SF+Pro+Display%3A500"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A400"/>
   <link rel="stylesheet" href="./styles/page-1.css"/>
+  <style>
+    body   {
+font-family: "Lato", sans-serif;
+transition: background-color .5s;
+}
+
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidenav a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 20px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+#main {
+transition: margin-left .5s;
+padding: 16px;
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+    </style>
 </head>
 <body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="./Analyses.html" data-text="home">Analyses</a>
+        <a href="./Caractérisation.html" data-text="home">Caractérisation</a>
+        <a href="./Caractérisation2.html" data-text="home">Caractérisation2</a>
+        <a href="./Corrosion.html" data-text="home">Corrosion</a>
+        <a href="./Environnement.html" data-text="home">Environnement</a>
+        <a href="./Etudes.html" data-text="home">Etudes</a>
+        <a href="./Géochimie.html" data-text="home">Géochimie</a>
+        <a href="./Géochimie.html" data-text="home">Gestionet</a>
+        <a href="./Imagerie.html" data-text="home">Imagerie</a>
+        <a href="./Roches.html" data-text="archives">Roches</a>
+        <a href="./Sédimentologie.html" data-text="tags">Sédimentologie</a>
+        <a href="./Stratigraphie.html" data-text="categories">Stratigraphiev</a>
+        <a href="./Traitement.html" data-text="about">Traitement</a>
+  </div>
+  
+  
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "24rem";
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementsByTag("section").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+  </script>
 <div class="desktop-3-yPk">
   <div class="component-1-ota">
     <div class="navbar-10-1tA">
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
       <div class="auto-group-qru2-qsC">
         <div class="frame-29-5mY">
           <div class="auto-group-z7bk-A2J">
             <div class="frame-15-814">
-              <p class="my-bookings-CWi"></p>
-              
+              <a href="#" class="my-bookings-CWi">Page d'accueil</a>
             </div>
             <p class="hotels-car-here-xuC"></p>
           </div>
         </div>
-        <img class="logo-6Ei" src="./assets/logo.png"/>
+        <img class="logo-6Ei" src="./assets/image-1.png"/>
       </div>
     </div>
    
     <div class="auto-group-lmf4-wRg">
-      <div class="side">
-    
-        <ul class="menu">
-          <li><a href="#" data-text="home">home</a></li>
-          <li><a href="#" data-text="archives">archives</a></li>
-          <li><a href="#" data-text="tags">tags</a></li>
-          <li><a href="#" data-text="categories">categories</a></li>
-          <li><a href="#" data-text="about">about</a></li>
-        </ul>
-      
-    </div>
       <div class="info">
       <p class="prestation-oCz" style="left: 26rem;">PRESTATION</p>
       <p class="ralisation-des-tudes-synthses-prestations-danalyseet-dexprimentation-se-rapportant-notamment-aux-besoins-dexploitation-deproduction-de-transport-et-de-valorisation-des-hydrocarbures-Hdx">Réalisation des études, synthèses, prestations d&#39;analyseet d&#39;expérimentation se rapportant notamment aux besoins d&#39;exploitation, deproduction, de transport et de valorisation des hydrocarbures</p>
@@ -51,18 +125,8 @@
       <p class="participation-loptimisation-des-schmas-dedveloppement-des-gisements-dhydrocarbures-et-lamlioration-de-leurrcupration-mb4">Participation à l&#39;optimisation des schémas dedéveloppement des gisements d&#39;hydrocarbures et à l&#39;amélioration de leurrécupération</p>
     </div>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <div class="slider rectangle-39-XVg">
-        <i class="fa-solid fa-angles-left fa-2x previous"></i>
-        <div class="img-container">
-          <img rectangle-39-XVg src="./assets/rectangle-39.png"/>
-          <br>
-          <img rectangle-39-XVg src="./assets/rectangle-39.png"/>
-          <img rectangle-39-XVg src="./assets/rectangle-39.png"/>
-          <img rectangle-39-XVg src="./assets/rectangle-39.png"/>
-          <img rectangle-39-XVg src="./assets/rectangle-39.png"/>
-          <img rectangle-39-XVg src="./assets/rectangle-39.png"/>
-        </div>
-        <i class="fa-solid fa-angles-right fa-2x next"></i>
+      <div class="rectangle-39-XVg">
+          <img class="img-rec" src="./assets/rectangle-39.png"/>
       </div>
     </div>
   </div>
