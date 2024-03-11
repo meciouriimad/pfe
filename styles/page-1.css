@@ -30,6 +30,7 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
 .side{
   top: 18rem;
   width: 13rem;
@@ -64,7 +65,7 @@ body {
   width: 144rem;
 }.desktop-3-yPk {
   width: 100%;
-  height: 141.4rem;
+  height: 120.4rem;
   overflow: hidden;
   position: relative;
   background-color: #ffffff;
@@ -252,12 +253,12 @@ a:hover{
   white-space: nowrap;
 }
 .desktop-3-yPk .component-1-ota .auto-group-lmf4-wRg .ralisation-des-tudes-synthses-prestations-danalyseet-dexprimentation-se-rapportant-notamment-aux-besoins-dexploitation-deproduction-de-transport-et-de-valorisation-des-hydrocarbures-Hdx {
-  width: 70.3rem;
+  width: 69.3rem;
   height: 7.3rem;
   position: absolute;
-  left: 18.2rem;
+  left: 16.2rem;
   top: 16rem;
-  font-size: 2rem;
+  font-size: 1.74rem;
   font-weight: 600;
   line-height: 1.2125;
   color: #000000;
@@ -267,21 +268,47 @@ a:hover{
   width: 70.1rem;
   height: 4.9rem;
   position: absolute;
-  left: 18.2rem;
+  left: 16.2rem;
   top: 26.1rem;
-  font-size: 2rem;
+  font-size: 1.74rem;
   font-weight: 600;
   line-height: 1.2125;
   color: #000000;
   font-family: Inter, 'Source Sans Pro';
 }
+.copy-right-sec{
+	padding: 1.8rem;
+    background: #969493;
+    color: #fff;
+}
+
+.footer-8-white-t7G ul {
+  padding-left: 0; /* To remove default padding */
+}
+
+.footer-8-white-t7G ul li {
+  margin-bottom: 10px; /* Adjust the value as per your preference */
+}
+
+.foot{
+  justify-content: space-between;
+}
+li{
+  display: inline;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.copy-right-sec a{
+	color: #fcd462;
+    font-weight: 500;
+}
 .desktop-3-yPk .component-1-ota .auto-group-lmf4-wRg .soutien-et-assistance-aux-structures-oprationnelles-desonatrach-et-ses-filiales-par-la-prise-en-charge-de-la-rsolution-desproblmes-rencontrs-caractres-scientifique-et-technique-juG {
-  width: 70.1rem;
+  width: 69.1rem;
   height: 7.3rem;
   position: absolute;
-  left: 18.2rem;
+  left: 16.2rem;
   top: 33.8rem;
-  font-size: 2rem;
+  font-size: 1.74rem;
   font-weight: 600;
   line-height: 1.2125;
   color: #000000;
@@ -291,9 +318,9 @@ a:hover{
   width: 70.2rem;
   height: 4.9rem;
   position: absolute;
-  left: 18.2rem;
+  left: 16.2rem;
   top: 43.9rem;
-  font-size: 2rem;
+  font-size: 1.74rem;
   font-weight: 600;
   line-height: 1.2125;
   color: #000000;
@@ -531,9 +558,10 @@ a:hover{
         }
         .footer-8-white-t7G {
           width: 100%;
-          height: 58.9039rem;
-          position: relative;
+          height: 6.9039rem;
+          position: absolute;
           overflow: hidden;
+          top: 55rem;
           background-color: #ffffff;
         }
         .footer-8-white-t7G .background-bXU {

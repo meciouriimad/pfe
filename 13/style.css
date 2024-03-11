@@ -5,6 +5,62 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+body   {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ff9100;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #050505;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.copy-right-sec{
+	padding: 1.8rem;
+    background: #969493;
+    color: #fff;
+}
+.copy-right-sec a{
+	color: #fcd462;
+    font-weight: 500;
+}
 .info-h1{
   left: 5rem;
   position: relative;
@@ -14,6 +70,22 @@
   top: 2rem;
   font-size: x-large;
   left: 6rem;
+}
+.footer-8-white-t7G ul {
+  padding-left: 0; /* To remove default padding */
+}
+
+.footer-8-white-t7G ul li {
+  margin-bottom: 10px; /* Adjust the value as per your preference */
+}
+
+.foot{
+  justify-content: space-between;
+}
+li{
+  display: inline;
+  font-size: 12px;
+  justify-content: space-between;
 }
 .info{
   display: flex;
@@ -46,7 +118,7 @@ a{
   text-decoration: none;
 }
 html {
-	font-size:60%;
+	font-size:55%;
 }
 body {
   align-items: center;
@@ -57,8 +129,11 @@ body {
   background: #e1620df7;
 }
 section{
-  background-image:url("./assets/IMG_20181101_160858.jpg");
+  background-image: url("../assets/logo_transparent.png");
   height: 95px;
+  background-repeat: repeat;
+  background-size: 4rem;
+  background-color: #c4c9c9;
 }
 .wrapper {
   max-width: 640px;
@@ -463,12 +538,12 @@ ul li{
   list-style: none;
 }
 .footer-8-white-t7G {
-  width: 180%;
-  height: 28.9039rem;
+  width: 217%;
+  height: 4.9039rem;
   position: relative;
-  left: -23rem;
+  left: -29rem;
   overflow: hidden;
-  top: 8rem;
+  top: 6rem;
   background-color: #ffffff;
 }
 .footer-8-white-t7G .background-bXU {

@@ -93,8 +93,37 @@ top: 0.5rem;
   left: 10rem;
 }
 section{
-  background-color: #c0c5c5;
+  background-image: url("../assets/logo_transparent.png");
   height: 95px;
+  background-repeat: repeat-x;
+  background-size: 10rem;
+  background-color: #bec2c2;
+}
+.copy-right-sec{
+	padding: 1.8rem;
+    background: #969493;
+    color: #fff;
+}
+
+.footer-8-white-t7G ul {
+  padding-left: 0; /* To remove default padding */
+}
+
+.footer-8-white-t7G ul li {
+  margin-bottom: 10px; /* Adjust the value as per your preference */
+}
+
+.foot{
+  justify-content: space-between;
+}
+li{
+  display: inline;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.copy-right-sec a{
+	color: #fcd462;
+    font-weight: 500;
 }
 h4{
   font-size: large;   
@@ -521,10 +550,9 @@ input[type="checkbox"] {
 }
 .footer-8-white-t7G {
   width: 100%;
-  height: 32.9039rem;
+  height: 6.9039rem;
   position: relative;
   top: 2rem;
-  left: 8rem;
   overflow: hidden;
   background-color: #ffffff;
 }

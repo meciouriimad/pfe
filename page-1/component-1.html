@@ -1,214 +1,485 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <title>Component 1</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A400%2C500%2C600%2C700%2C800"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A400%2C500%2C600%2C700%2C800"/>
-  <link rel="stylesheet" href="./styles/component-1.css"/>
-  <style>
-    /* Style for dropdown menu */
-  
-    .dropdown {
-  float: left;
-  overflow: hidden;
+  <meta charset="utf-8">
+    <title>EURL UTPS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="EURL UTPS" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="./styles/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="./styles/css/style.css" rel="stylesheet">
+    <style>
+        
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #ffffff;
+          min-width: 260px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #ddd;}
+        
+        .dropdown:hover .dropdown-content {display: block;}
+        
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+        /* The Modal (background) */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
   color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
+.close:hover,
+.close:focus {
+  color: #000;
   text-decoration: none;
-  display: block;
-  text-align: left;
+  cursor: pointer;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+.modal-header {
+  padding: 2px 16px;
+  background-color: #ff9100;
+  color: white;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
 }
-  </style>
+        </style>
 </head>
 <body>
-<div class="component-1-Waz">
-  <div class="slides-jTk">
-    <img class="rectangle-2-Xnv" src="./assets/rectangle-2.png"/>
-    <p class="ce">Ce laboratoireest accrédité suivant la norme internationale homologuée NF ISO/CEI 17025 :2005.</p>
-    <p class="un-outil">Un Outil Scientifique et Technique</p>
-    <p class="division-laboratoires-Jqc">
-      <span class="div0">Division </span>
-      <span class="div1">Laboratoires</span>
-    </p>
-    <button class="group-2-qMg">Lire plus</button>
-    <div class="group-20-SMU">
-    </div>
-    <div class="heqderr-6gv" class="heqderr-6gv.white">
-      <div class="navbar-2-Eo8">
-        <ul class="frame-19-vR4">
-          <li  class="manifesto-Dux"><a href="#">HOME</a></li>
-          <div class="frame-15-vbQ">
-            <li class="how-it-works-RYA"><a href="#">Module</a>
-              <ul class="dropdown-content">
-                <div class="dropdown">
-                  <button class="dropbtn">Dropdown 
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+  <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/image-1.png" alt="" width="60" height="54">
+          </a>
+    
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <div class="dropdown">
+                <a href="#about" class="nav-item nav-link">Module <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="../page-1.html">Prestations</a>
+                    <a href="#">Bibliothèque Pôle Boumerdès</a>
+                    <a href="#">Système Management Qualité</a>
                   </div>
-                </div> 
-            </ul>
-          </li>
-            <img class="icon-pack-8Bg" src="./assets/icon-pack.png"/>
-          </div>
-          <div class="auto-group-mh6e-3pS">
-            <div class="frame-16-CSS">
-              <li class="company-jSN"><a href="#">Document utiles</a></li>
-              <img class="icon-pack-F9p" src="./assets/icon-pack-uRg.png"/>
-              
             </div>
-          </div>
+            <a href="#service" class="nav-item nav-link">Documents utiles</a>
+        </div>
+        <h4 class="m-0 pe-xxl-5 d-none d-xxl-block"><i class="fa fa-headphones text-primary me-3"></i>+213 (0) 675 55 58 15</h4>
+    </div>
+</nav>
+  <div class="main">
+        <div id="mySlider"></div>
+		<div id="sliderNav">
+			<div id="sliderPrev" onclick="prevSlide();"><i class="fa fa-chevron-left btn"></i></div>
+			<div id="sliderNext" onclick="nextSlide();"><i class="fa fa-chevron-right btn"></i></div>
+		</div>  
+        <div class="present">
+            <h2 id="prest">PREENTATION</h2>
+            <h4 class="title">La Division Laboratoires assure la réalisation des études, synthèses, prestations d’analyses,
+                rapportant notamment aux besoins d’exploration, de production, de transport et de valorisation
+                des hydrocarbures. Tout comme elle se donne pour mission d’introduire et de développer de
+                nouvelles techniques, méthodes d’analyses et d’interprétation. Elle s’attèle également à
+                promouvoir et à développer l’expertise sur les problématiques précises en collaboration avec les
+                institutions scientifiques nationales et internationales.</h4>
+                <a href="" id="btn" class="pop">voir plus</a>
+        </div>
+   </div>
+        <div class="side">
+        <ul class="menu">
+            <li>Document HSE</li>
+            <li>Document PM</li>
+            <li>Document SMQ</li>
+            <li>Fonds Documentaire</li>
+            <li>Liste des normes</li>
         </ul>
+        </div>
+
+
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        
       </div>
-      <img class="image-1-m8A" src="./assets/image-1-HhQ.png"/>
+      <div class="modal-body">
+        <h4>Division Technologie et Développement</h4>
+<h5>Votre partenaire pour vos analyses et vos études pétrolières et environnementales</h5>
+<p>La Division Technologies et Développement assure la réalisation des études, synthèses,
+  prestations d'analyses, rapportant notamment aux besoins d'exploration, de production, de
+  transport et de valorisation des hydrocarbures. Tout comme elle se donne pour mission
+  d'introduire et de développer de nouvelles techniques, méthodes d'analyses et d'interprétation.
+  Elle s'attèle également à promouvoir et à développer l'expertise sur les problématiques précises
+  en collaboration avec les institutions scientifiques nationales et internationales.
+  Pour ce faire, la Division Technologies et Développement s'est inscrite dans une démarche
+  d'accréditation selon le référentiel 17025, norme basée sur les principes de management et de
+  fiabilité des résultats pour donner aux essais réalisés le label qualité. Dans cette optique, la
+  Division Technologies et Développement, s'est investie, après agrément des autorités publiques,
+  dans le domaine de l'environnement par la réalisation d'études d'impact. De par les nombreux
+  projets de recherche initiés par le biais de conventions conclues avec les universités et instituts
+  nationaux, la Division Technologies et Développement est un acteur incontournable pour la prise
+  en charge des problématiques induites par l'activité spécifique de l'entreprise.
+  Enfin, dans une double démarche de valorisation de ses métiers, l'entreprise, a confié à
+  Technologies et Développement, la délicate et non moins ardue mission de réaliser un Centre de
+  Conservation et d'Exposition du Patrimoine Géologie et Hydrocarbures (CCEPGH). Cette
+  valorisation vise à créer un effet direct sur l'image de marque de l'entreprise et la valorisation de
+  sa spécificité</p>
+  <h5>Dispositif scientifique et ressources humaines :</h5>
+  <p> Un personnel scientifique de haut niveau composé de 190 Ingénieurs dont 39 post-gradués;
+     Des équipements de pointe répartis sur une trentaine de Laboratoires;
+     Des connaissances, une maîtrise du métier et des capacités prouvées en matière de
+    prestations d'analyses, d'études, de synthèses et de travaux de recherche;
+     Une notoriété reconnue en matière de publications scientifiques dans les revues nationales
+    et internationales;
+     Des capacités d'encadrement de haut niveau (une centaine d'étudiants par année : Induction
+    Licence, Master, ingéniorat, et post graduation).
+    Outre les structures de soutien et d'appui, la Division Technologies et Développement est
+    substantiellement organisée en cinq (05) structures opérationnelles (Géologie - Gisements -
+    Traitement des Hydrocarbures - Recherche - Laboratoires et Cartothèque Centrale ) et un Projet
+    CCEPGH
+    Ce laboratoire est accrédité (accréditation n°1-2087 portée disponible sur www.cofrac.fr) suivant
+    la norme internationale homologuée NF ISO/CEI 17025 : 2005. Cette accréditation est la preuve
+    de la compétence technique du laboratoire pour un domaine d'activité clairement défini et du
+    bon fonctionnement dans ce laboratoire d'un système de management de la qualité adapté</p>
+      </div>
     </div>
-    
-    
+  
   </div>
-  <div class="auto-group-9vvn-u1Q">
-    <div class="presentation-qfk">
-      <div class="presentation-K58">Presentation</div>
-      <div class="la-division-laboratoires-assure-laralisation-des-tudes-synthses-prestations-danalyses-rapportant-notammentaux-besoins-dexploration-de-production-de-transport-et-de-valorisation-deshydrocarbures-tout-comme-elle-se-donne-pour-mission-dintroduire-et-dedvelopper-de-nouvelles-techniques-mthodes-danalyses-et-dinterprtationelle-sattle-galement-promouvoir-et-dvelopper-lexpertise-sur-lesproblmatiques-prcises-en-collaboration-avec-les-institutions-scientifiquesnationales-et-internationales-QsG">La Division Laboratoires assure laréalisation des études, synthèses, prestations d’analyses, rapportant notammentaux besoins d’exploration, de production, de transport et de valorisation deshydrocarbures. Tout comme elle se donne pour mission d’introduire et dedévelopper de nouvelles techniques, méthodes d’analyses et d’interprétation.Elle s’attèle également à promouvoir et à développer l’expertise sur lesproblématiques précises en collaboration avec les institutions scientifiquesnationales et internationales.</div>
-        <button class="group-2-TUA">Lire plus</button>
-    </div>
-    <div class="navigat-gbp">
-      <div class="navigation-QGv">Navigation</div>
-      <div class="group-27-WKx">
-        <div class="group-22-ewx">
-          <img class="vector-Bgz" src="./assets/vector-5R8.png"/>
-          <div class="document-hse-7qY">Document HSE</div>
-        </div>
-        <div class="group-23-e4n">
-          <img class="vector-oTU" src="./assets/vector-ook.png"/>
-          <div class="document-pm-LCW">Document PM</div>
-        </div>
-        <div class="group-24-rwY">
-          <img class="vector-cvi" src="./assets/vector-gLE.png"/>
-          <div class="document-smq-MNW">Document SMQ</div>
-        </div>
-        <div class="group-25-g9t">
-          <img class="vector-SPx" src="./assets/vector.png"/>
-          <div class="fonds-documentaire-y8z">Fonds Documentaire</div>
-        </div>
-        <div class="group-26-h4z">
-          <img class="vector-TZx" src="./assets/vector-dki.png"/>
-          <div class="liste-des-normes-CGe">Liste des normes</div>
-        </div>
-      </div>
-    </div>
-    <div class="group-8-Uzr">
-      <div class="group-4-Pc2">
-        <p class="systme-management-qualit-uKU">Système Management Qualité</p>
-      </div>
-      <div class="auto-group-r5z8-MhG">
-        <div class="group-7-WKG">
-          <div class="rectangle-25-v86">
-          </div>
-          <div class="rectangle-22-P1g">
-          </div>
-          <img class="rectangle-23-UJ2" src="./assets/rectangle-23.png"/>
-          <img class="rectangle-24-Pvn" src="./assets/rectangle-24.png"/>
-        </div>
-        <div class="group-5-jDx">
-          <p class="normes-internationnales-sLA"> Normes Internationnales</p>
-        </div>
-      </div>
-      <div class="group-6-Yx6">
-        <p class="passation-des-marchs-fmp"> Passation des Marchés</p>
-      </div>
-    </div>
-    <div class="auto-group-umxc-7ti">
-      <div class="footer-ui-Sg6">
-        <div class="auto-group-bbcr-f34">
-          <div class="rectangle-11-kaJ">
-          </div>
-          <div class="auto-group-vdzq-5Mg">
-            <img class="image-1-Q94" src="./assets/image-1.png"/>
-            <div class="group-21-w8z">
-              <div class="location-Gh4">
-                <img class="round-place-24px-owt" src="./assets/round-place-24px.png"/>
-                <p class="faulconer-drive-YPg">
-                Siège social :  1, Avenue du 1erNovembre - Boumerdès (35000) - Algérie.
-                <br/>
-                
-                </p>
-              </div>
-              <div class="auto-group-ai54-prz">
-                <div class="phone-xCW">
-                  <img class="round-phone-24px-UwY" src="./assets/round-phone-24px.png"/>
-                  <p class="item-434-295-1131-D8S">+213 24 79  11 28/30</p>
-                </div>
-                <div class="fax-uGA">
-                  <img class="round-local-printshop-24px-rBQ" src="./assets/round-local-printshop-24px.png"/>
-                  <p class="item-434-293-7377-yWv">sec.DIVLABS@sonatrach.dz</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="rectangle-16-sMQ">
-          </div>
-        </div>
-        <div class="auto-group-8rkg-bHQ">
-          <p class="copyright-2018-m-9pi">Réalisé Par Département I.T</p>
-          <p class="copyright-2018-m-4gn">
-          Copyright © 2016 Division Laboratoires.
-          <br/>
-          Tous droits réservés.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<script>
-  // JavaScript to toggle visibility of dropdown content
-  document.querySelectorAll('.dropdown').forEach(function(dropdown) {
-    dropdown.addEventListener('click', function() {
-      var content = this.querySelector('.dropdown-content');
-      content.style.display = content.style.display === 'block' ? 'none' : 'block';
-    });
-  });
-</script>
+    <script>
+        /*-----------------------------------------------------------------
+-----------------------------------------------------------------
+----------------------- GLOBAL VARIABLES ------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------*/
+
+
+// Used to add a numeric id on slide creation to let us target the element later  
+var slideIndex = 0;
+// Tells us which slide we are on
+var currentSlideIndex = 0;
+// An Array to hold all the slides
+var slideArray = [];
+
+
+/*-----------------------------------------------------------------
+-----------------------------------------------------------------
+----------------------- THE TEMPLATE ---------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------*/
+
+
+
+// Template for creating a custom Slide object
+function Slide(title, subtitle, subcon, background, link ) {
+	this.title = title;
+	this.subtitle = subtitle;
+    this.subcon = subcon;
+	this.background = background;
+	this.link = link;
+	// we need an id to target later using getElementById
+	this.id = "slide" + slideIndex;
+	// Add one to the index for the next slide number
+	slideIndex++;
+	// Add this Slide to our array
+	slideArray.push(this);
+}
+
+
+
+/*-----------------------------------------------------------------
+-----------------------------------------------------------------
+----------------------- SLIDE CREATION ---------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------*/
+
+
+// Creating our slide objects, you can make as many as you want
+
+var walkingDead = new Slide(
+	"Division Laboratoires", 
+	"Un Outil Scientifique et Technique", 
+    "Ce laboratoireest accrédité suivant la norme internationale homologuée NF ISO/CEI 17025 :2005.",
+	"./assets/rectangle-14-bg.png", 
+	"#"
+);
+
+var bigBang = new Slide(
+	"Geologie", 
+	" Etudes de Géologie de Réservoir", 
+    "Réaliser des études et des synthèses de géologie de laboratoires et de terrain sur la base des aspects sédimentologiques",
+	"https://source.unsplash.com/450x450/?cat", 
+	"#"
+);
+
+var LastMan = new Slide(
+	"GISEMENTS", 
+	"Etudes sur les fluides de forage", 
+    "Caractériser les propriétés pétro physiques des roches réservoirs pour les besoins d’exploitation rationnelle des gisements d’hydrocarbures.",
+	"https://source.unsplash.com/450x450/?tech", 
+	"#"
+);
+var LastMan = new Slide(
+	"The Last Man on Earth", 
+	"A show about loneliness", 
+    "Ce laboratoireest accrédité suivant la norme internationale homologuée NF ISO/CEI 17025 :2005.",
+	"https://source.unsplash.com/450x450/?tech", 
+	"#"
+);
+
+
+
+/*-----------------------------------------------------------------
+-----------------------------------------------------------------
+----------------------- ADD TO WEB PAGE ---------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------*/
+
+
+
+// function openPopup(content) {
+//     // Create a basic HTML structure for the popup content
+//     var popupContent = `
+//     <div class="modal-body">
+//                     <h2>Présentation de l'Entreprise</h2>
+//                     <p> Soucieux de créer une industrie au sud du pays afin de répondre aux besoins des différents secteurs industriels et agricoles situés dans le sud de l'Algérie. Nous sommes une unité de transformation du plastique spécialisée dans la fabrication de films en polyéthylène, la production de sacheries et l'impression sur film.<br>
+//                       <br>Depuis notre création, nous avons élargi notre gamme de produits pour répondre à la demande de notre clientèle. En 1990, nous avons commencé à produire des sacheries en plus des films agricoles. Nous nous sommes également spécialisés dans la fabrication de films destinés au conditionnement du lait pasteurisé, ce qui nous a permis de conclure des contrats de fourniture avec différentes laiteries à travers le pays.<br>
+//                       <br>En 1999, nous avons converti notre unité en une Entreprise Unipersonnelle à Responsabilité Limitée (EURL), ce qui nous a permis de nous développer davantage en travaillant avec un personnel qualifié. Nous avons également étendu nos installations pour améliorer continuellement la qualité de nos produits en suivant les avancées technologiques et les progrès réalisés par nos fournisseurs.<br>
+//                       <br>Notre société est en constante expansion et nous nous efforçons de développer nos structures pour assurer une performance optimale dans l'industrie du plastique. Nous sommes fiers de notre personnel qui a démontré une amélioration significative dans la maîtrise des procédés de fabrication du film multicouche alimentaire et de son impression jusqu'à six couleurs.<br>
+//                       <br>Nous accordons une grande importance à la formation de nos ressources humaines, à l'extension de nos infrastructures et à l'acquisition d'équipements nouveaux.&nbsp;<br>Grâce à ces efforts, nous avons obtenu la certification ISO 9001-2008, ce qui témoigne de notre engagement envers la qualité.<br>Nos principaux produits comprennent des films d'extrusion alimentaires, des sachets de lait, des sacs de congélation, des emballages et une gamme complète de sacs. Nous fournissons également des films pour le secteur agricole, tels que des films pour abris de serre, le paillage, les tunnels et les bourbiers, entre autres. En outre, nous proposons des services d'impression flexographique pouvant aller jusqu'à six couleurs.<br>
+//                       <br>Nous utilisons différentes matières premières dans notre production, notamment le polyéthylène basse densité (PEBD), le polyéthylène haute densité (PEHD), le polyéthylène basse densité linéaire (PELLD), le metallocène, les mastics, les diluants, les retardateurs, les encres, etc.<br>Nous nous engageons à offrir à nos clients les meilleurs rapports qualité-prix.&nbsp;<br>N'hésitez pas à nous contacter pour obtenir plus d'informations et améliorer vos emballages et solutions plastiques.<br>
+//                       <br>
+//                       <span style="font-weight: 700;">Mr. BOUZID Noureddine<br>Gérant propriétaire.
+//                       </span>
+//                       <br>
+//                     </p>
+//                 </div>`;
+
+//     // Create the popup window with the HTML content
+//     var popupWindow = window.open("", "", "width=600,height=400");
+
+//     // Write the HTML content to the popup window document
+//     popupWindow.document.write(popupContent);
+
+//     // Optional: Focus the popup window
+//     popupWindow.focus();
+// }
+
+
+function openPopup(content) {
+            // Set the content of the modal
+            document.querySelector('.modal-body').innerHTML = content;
+            // Show the modal
+            $('#myModal').modal('show');
+        }
+
+function buildSlider(){
+    // A variable to hold all our HTML
+    var myHTML = '';
+    
+    // Go through the Array and add the code to our HTML
+    for(var i = 0; i < slideArray.length; i++) {
+        
+        myHTML += "<div id='" + slideArray[i].id + 
+        "' class='singleSlide' style='background-image:url(" + slideArray[i].background + ");'>" + 
+        "<div class='slideOverlay'>" + 
+        "<h1>" + slideArray[i].title + "</h1>" +
+        "<h4>" + slideArray[i].subtitle + "</h4>" +
+        "<h5>" + slideArray[i].subcon + "</h5> <br><br><br><br>" +
+        "<a href='#' id='myBtn' onclick='openPopup(\"" + slideArray[i].subcon + "\")'>Voir plus</a>" +
+        "</div>" +
+        "</div>";   
+        
+    }
+    
+    // Print our HTML to the web page
+    document.getElementById("mySlider").innerHTML = myHTML;
+        
+    // Display the first slide
+    document.getElementById("slide" + currentSlideIndex).style.left = 0;
+
+}
+
+// Create our slider
+buildSlider();
+
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+/*-----------------------------------------------------------------
+-----------------------------------------------------------------
+----------------------- SLIDER CONTROLS ---------------------------
+-----------------------------------------------------------------
+-----------------------------------------------------------------*/
+
+
+
+// Navigates to the previous slide in the list
+function prevSlide(){
+	// Figure out what the previous slide is
+	var nextSlideIndex;
+	// If we are at zero go to the last slide in the list
+	if (currentSlideIndex === 0 ) {
+		nextSlideIndex = slideArray.length - 1;
+	} else {
+		// Otherwise the next one is this slide minus 1
+		nextSlideIndex = currentSlideIndex - 1;
+	}	
+	
+	// Setup the next slide and current slide for animations
+	document.getElementById("slide" + nextSlideIndex).style.left = "-100%";
+	document.getElementById("slide" + currentSlideIndex).style.left = 0;
+	
+	// Add the appropriate animation class to the slide
+	document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInLeft");
+	document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutRight");
+	
+	// Set current slide to the new current slide
+	currentSlideIndex = nextSlideIndex;
+}
+
+
+// Navigates to the next slide in the list
+function nextSlide(){
+	// Figure out what the next slide is
+	var nextSlideIndex;
+	// If we are at the last slide the next one is the first (zero based)
+	if (currentSlideIndex === (slideArray.length - 1) ) {
+		nextSlideIndex = 0;
+	} else {
+		// Otherwise the next slide is the current one plus 1
+		nextSlideIndex = currentSlideIndex + 1;
+	}	
+	
+	// Setup the next slide and current slide for animations
+	document.getElementById("slide" + nextSlideIndex).style.left = "100%";
+	document.getElementById("slide" + currentSlideIndex).style.left = 0;
+	
+	// Add the appropriate animation class to the slide
+	document.getElementById("slide" + nextSlideIndex).setAttribute("class", "singleSlide slideInRight");
+	document.getElementById("slide" + currentSlideIndex).setAttribute("class", "singleSlide slideOutLeft");
+	
+	// Set current slide to the new current slide
+	currentSlideIndex = nextSlideIndex;
+}
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+</html>

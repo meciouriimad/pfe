@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Responsive Accordion Menu | Coding Stella </title>
+    <title> Roches Réservoirs </title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="./Analyses.html" data-text="home">Analyses</a>
+        <a href="./Caractérisation.html" data-text="home">Caractérisation</a>
+        <a href="./Caractérisation2.html" data-text="home">Caractérisation2</a>
+        <a href="./Corrosion.html" data-text="home">Corrosion</a>
+        <a href="./Environnement.html" data-text="home">Environnement</a>
+        <a href="./Etudes.html" data-text="home">Etudes</a>
+        <a href="./Géochimie.html" data-text="home">Géochimie</a>
+        <a href="./Géochimie.html" data-text="home">Gestionet</a>
+        <a href="./Imagerie.html" data-text="home">Imagerie</a>
+        <a href="./Roches.html" data-text="archives">Roches</a>
+        <a href="./Sédimentologie.html" data-text="tags">Sédimentologie</a>
+        <a href="./Stratigraphie.html" data-text="categories">Stratigraphiev</a>
+        <a href="./Traitement.html" data-text="about">Traitement</a>
+  </div>
+  
+  
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "25rem";
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementsByTag("section").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+  </script>
   <div class="navbar-10-1tA">
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
     <div class="auto-group-qru2-qsC">
       <div class="frame-29-5mY">
         <div class="auto-group-z7bk-A2J">
@@ -18,7 +55,7 @@
           <p class="hotels-car-here-xuC"></p>
         </div>
       </div>
-      <img class="logo-6Ei" src="./assets/logo.png"/>
+      <img class="logo-6Ei" src="./assets/image-1.png"/>
     </div>
   </div>
   <section>
@@ -26,29 +63,21 @@
     <h4 class="sub-title">
             sont accrédités suivant lanorme internationale NF ISO/CEI 17025</h4>
     </section>
-    <div class="side">
-    
-      <ul class="menu ">
-        <li><a href="./Analyses.html" data-text="home">Analyses</a></li>
-        <li><a href="./Caractérisation.html" data-text="home">Caractérisation</a></li>
-        <li><a href="./Caractérisation2.html" data-text="home">Caractérisation2</a></li>
-        <li><a href="./Corrosion.html" data-text="home">Corrosion</a></li>
-        <li><a href="./Environnement.html" data-text="home">Environnement</a></li>
-        <li><a href="./Etudes.html" data-text="home">Etudes</a></li>
-        <li><a href="./Géochimie.html" data-text="home">Géochimie</a></li>
-        <li><a href="./Géochimie.html" data-text="home">Gestionet</a></li>
-        <li><a href="./Imagerie.html" data-text="home">Imagerie</a></li>
-        <li><a href="./Roches.html" data-text="archives">Roches</a></li>
-        <li><a href="./Sédimentologie.html" data-text="tags">Sédimentologie</a></li>
-        <li><a href="./Stratigraphie.html" data-text="categories">Stratigraphiev</a></li>
-        <li><a href="./Traitement.html" data-text="about">Traitement</a></li>
-      </ul>
-    
-  </div>
+    <div class="info">
+      <h1 class="info-h1">Roches Réservoirs</h1>
+      <br>
+      <br>
+      <p>• Identification et l'étude de tous les éléments fossiles (palynomorphes ou microfaunes) des formations sédimentaires d'âge Paléozoïque et d'âge Mésozoïque en vue d'établir la chrono-stratigraphie et les environnements de dépôts.</p>
+      <br>
+        <p>• Réalisation des corrélations bio-stratigraphiques de sondages (carottes et cuttings) ou de coupes de terrain destinées aux travaux de modélisation géologique ou géochimique .</p>
+        <br>
+        <p>• Analyse au microscope électronique à balayage d'échantillons (MEB ou SEM) pour l'observation, en haute résolution, de la surface des échantillons de roches ou d'un autre matériel (Béton, plastique, métal) au bénéfice de tiers.</p>
+      
+    </div>
   <div class="wrapper">
     <!-- Accordion Heading One -->
     <div class="parent-tab">
-      <input type="radio" name="tab" id="tab-1" checked>
+      <input type="checkbox" name="tab" id="tab-1">
       <label for="tab-1">
         <span>MESURES SUR CAROTTES</span>
         <div class="icon"><i class="fas fa-plus"></i></div>
@@ -70,7 +99,7 @@
 
     <!-- Accordion Heading Two -->
     <div class="parent-tab">
-      <input type="radio" name="tab" id="tab-2">
+      <input type="checkbox" name="tab" id="tab-2">
       <label for="tab-2">
         <span>PETROPHYSIQUE</span>
         <div class="icon"><i class="fas fa-plus"></i></div>
@@ -97,7 +126,21 @@
     
       </div>
     </div>
-
+    <div class="footer-8-white-t7G">
+      <section id="copy-right">
+        <div class="copy-right-sec">
+          <ul foot>
+            <li>Siège social :  1, Avenue du 1erNovembre - Boumerdès (35000) - Algérie. &nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li>+213 24 79  11 28/30 &nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li>sec.DIVLABS@sonatrach.dz &nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li>Réalisé Par Département I.T &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li>Copyright © 2016 Division Laboratoires.Tous droits réservés. &nbsp;&nbsp;&nbsp;&nbsp; </li>
+          </ul>
+  
+        </div>
+  
+      </section>
+    </div>
   </div>
 
 </body>

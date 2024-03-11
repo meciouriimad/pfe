@@ -8,7 +8,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="./Analyses.html" data-text="home">Analyses</a>
+        <a href="./Caractérisation.html" data-text="home">Caractérisation</a>
+        <a href="./Caractérisation2.html" data-text="home">Caractérisation2</a>
+        <a href="./Corrosion.html" data-text="home">Corrosion</a>
+        <a href="./Environnement.html" data-text="home">Environnement</a>
+        <a href="./Etudes.html" data-text="home">Etudes</a>
+        <a href="./Géochimie.html" data-text="home">Géochimie</a>
+        <a href="./Géochimie.html" data-text="home">Gestionet</a>
+        <a href="./Imagerie.html" data-text="home">Imagerie</a>
+        <a href="./Roches.html" data-text="archives">Roches</a>
+        <a href="./Sédimentologie.html" data-text="tags">Sédimentologie</a>
+        <a href="./Stratigraphie.html" data-text="categories">Stratigraphiev</a>
+        <a href="./Traitement.html" data-text="about">Traitement</a>
+  </div>
+  
+  
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "25rem";
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementsByTag("section").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+  }
+  </script>
   <div class="navbar-10-1tA">
+    <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></div>
     <div class="auto-group-qru2-qsC">
       <div class="frame-29-5mY">
         <div class="auto-group-z7bk-A2J">
@@ -18,7 +55,7 @@
           <p class="hotels-car-here-xuC"></p>
         </div>
       </div>
-      <img class="logo-6Ei" src="./assets/logo.png"/>
+      <img class="logo-6Ei" src="./assets/image-1.png"/>
     </div>
   </div>
   <section>
@@ -26,25 +63,6 @@
   <h4 class="sub-title">
           sont accrédités suivant lanorme internationale NF ISO/CEI 17025</h4>
   </section>
-  <div class="side">
-    
-    <ul class="menu ">
-      <li><a href="./Analyses.html" data-text="home">Analyses</a></li>
-      <li><a href="./Caractérisation.html" data-text="home">Caractérisation</a></li>
-      <li><a href="./Caractérisation2.html" data-text="home">Caractérisation2</a></li>
-      <li><a href="./Corrosion.html" data-text="home">Corrosion</a></li>
-      <li><a href="./Environnement.html" data-text="home">Environnement</a></li>
-      <li><a href="./Etudes.html" data-text="home">Etudes</a></li>
-      <li><a href="./Géochimie.html" data-text="home">Géochimie</a></li>
-      <li><a href="./Géochimie.html" data-text="home">Gestionet</a></li>
-      <li><a href="./Imagerie.html" data-text="home">Imagerie</a></li>
-      <li><a href="./Roches.html" data-text="archives">Roches</a></li>
-      <li><a href="./Sédimentologie.html" data-text="tags">Sédimentologie</a></li>
-      <li><a href="./Stratigraphie.html" data-text="categories">Stratigraphiev</a></li>
-      <li><a href="./Traitement.html" data-text="about">Traitement</a></li>
-    </ul>
-  
-</div>
   <div class="info">
     <h1 class="info-h1">Sédimentologie </h1>
     <br>
@@ -60,7 +78,7 @@
   <div class="wrapper">
     <!-- Accordion Heading One -->
     <div class="parent-tab">
-      <input type="radio" name="tab" id="tab-1" checked>
+      <input type="checkbox" name="tab" id="tab-1">
       <label for="tab-1">
         <span>CLASTIQUES ET RESERVOIRS</span>
         <div class="icon"><i class="fas fa-plus"></i></div>
@@ -111,50 +129,22 @@
       </ul>
       </div>
     </div>
-  </div>
-  <div class="footer-8-white-t7G">
-    <div class="background-bXU">
-    </div>
-    <div class="footer-ui-7Ev">
-      <div class="auto-group-ddev-BEn">
-        <div class="rectangle-11-eeA">
-        </div>
-        <div class="auto-group-xper-w7U">
-          <img class="image-1-1t2" src="./assets/image-1.png"/>
-          <div class="group-21-7w4">
-            
-            <div class="auto-group-skli-P1Q">
-              <div class="location-342">
-                <img class="round-place-24px-mVp" src="./assets/round-place-24px.png"/>
-                <p class="faulconer-drive-Hyx">
-                Siège social :  1, Avenue du 1erNovembre - Boumerdès (35000) - Algérie.
-                <br/>
-                
-                </p>
-              </div>
-              <div class="phone-6gW">
-                <img class="round-phone-24px-oav" src="./assets/round-phone-24px.png"/>
-                <p class="item-434-295-1131-vfY">+213 24 79  11 28/30</p>
-              </div>
-              <div class="fax-EAS">
-                <img class="round-local-printshop-24px-ZTc" src="./assets/round-local-printshop-24px.png"/>
-                <p class="item-434-293-7377-5wk">sec.DIVLABS@sonatrach.dz</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="rectangle-16-a7p">
-        </div>
+    <div class="footer-8-white-t7G">
+    <section id="copy-right">
+      <div class="copy-right-sec">
+        <ul foot>
+          <li>Siège social :  1, Avenue du 1erNovembre - Boumerdès (35000) - Algérie. &nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li>+213 24 79  11 28/30 &nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li>sec.DIVLABS@sonatrach.dz &nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li>Réalisé Par Département I.T &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+          <li>Copyright © 2016 Division Laboratoires.Tous droits réservés. &nbsp;&nbsp;&nbsp;&nbsp; </li>
+        </ul>
+
       </div>
-      <div class="auto-group-w71g-fux">
-        <p class="copyright-2018-m-ReE">Réalisé Par Département I.T</p>
-        <p class="copyright-2018-m-7X4">
-        Copyright © 2016 Division Laboratoires.
-        <br/>
-        Tous droits réservés.
-        </p>
-      </div>
-    </div>
+
+    </section>
   </div>
+  </div>
+  
 </body>
 </html>
