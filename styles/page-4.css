@@ -28,6 +28,24 @@ ul, li {
   font-size: 20px;
   flex-direction: column;
 }
+.li-left{
+  position: relative;
+  left: 82rem;
+}
+.li-2{
+  position: relative;
+  left: 64rem;
+}
+.li-1{
+  position: relative;
+  left: 20rem;
+}
+
+.foot-2{
+  position: relative;
+  top: 0.5rem;
+}
+
 input {
 	border: none;
 }
@@ -88,9 +106,9 @@ body {
 section{
   background-image: url("../assets/logo_transparent.png");
   height: 95px;
-  background-repeat: repeat-x;
-  background-size: 10rem;
-  background-color: #bec2c2;
+  background-repeat: repeat;
+  background-size: 4rem;
+  background-color: #c4c9c9;
 }
 .desktop-5-HJE .component-3-RQS .navbar-10-w7t .auto-group-3npg-yqG .frame-29-hFU .auto-group-u6qn-NsQ {
   box-sizing: border-box;
@@ -108,7 +126,7 @@ section{
   flex-shrink: 0;
 }
 .desktop-5-HJE .component-3-RQS .navbar-10-w7t .auto-group-3npg-yqG .frame-29-hFU .auto-group-u6qn-NsQ .frame-15-uMY .my-bookings-aia {
-  margin-right: 1.2999rem;
+  margin-right: 8.2999rem;
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.2125;
@@ -212,7 +230,7 @@ section{
 }
 .copy-right-sec{
 	padding: 1.8rem;
-    background: #969493;
+    background: #ff7300;
     color: #fff;
 }
 
@@ -640,9 +658,9 @@ li{
         }
         .footer-8-white-t7G {
           width: 100%;
-          height: 4.9039rem;
+          height: 6.9039rem;
           position: relative;
-          top: 18rem;
+          top: 16.2rem;
           overflow: hidden;
           background-color: #ffffff;
         }

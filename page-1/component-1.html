@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-    <title>EURL UTPS</title>
+    <title>Page d'accueil</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="EURL UTPS" name="keywords">
+    <meta content="Page d'accueil" name="keywords">
     <meta content="" name="description">
 
     <!-- Google Web Fonts -->
@@ -102,6 +102,8 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  position: relative;
+  left: 65rem;
 }
 
 .close:hover,
@@ -124,8 +126,67 @@
   background-color: #5cb85c;
   color: white;
 }
+.side-nav {
+  height: 100%;
+  width: 200px;
+  position: relative;
+  z-index: 1;
+  top: 3rem;
+  left: 0;
+  background-color: #c0c0c0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the side-nav links and the dropdown button */
+.side-nav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  color: #080808;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.side-nav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+  
+/* Add an active class to the active dropdown button */
+.active {
+
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #9c9c9c;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .side-nav {padding-top: 15px;padding-bottom: 1rem;}
+  .side-nav a {font-size: 18px;}
+}
+
         </style>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         <a class="navbar-brand" href="#">
@@ -151,12 +212,13 @@
         <h4 class="m-0 pe-xxl-5 d-none d-xxl-block"><i class="fa fa-headphones text-primary me-3"></i>+213 (0) 675 55 58 15</h4>
     </div>
 </nav>
-  <div class="main">
-        <div id="mySlider"></div>
+<div id="mySlider"></div>
 		<div id="sliderNav">
 			<div id="sliderPrev" onclick="prevSlide();"><i class="fa fa-chevron-left btn"></i></div>
 			<div id="sliderNext" onclick="nextSlide();"><i class="fa fa-chevron-right btn"></i></div>
 		</div>  
+  <div class="main">
+        
         <div class="present">
             <h2 id="prest">PREENTATION</h2>
             <h4 class="title">La Division Laboratoires assure la réalisation des études, synthèses, prestations d’analyses,
@@ -165,22 +227,53 @@
                 nouvelles techniques, méthodes d’analyses et d’interprétation. Elle s’attèle également à
                 promouvoir et à développer l’expertise sur les problématiques précises en collaboration avec les
                 institutions scientifiques nationales et internationales.</h4>
-                <a href="" id="btn" class="pop">voir plus</a>
+                
         </div>
-   </div>
-        <div class="side">
-        <ul class="menu">
-            <li>Document HSE</li>
-            <li>Document PM</li>
-            <li>Document SMQ</li>
-            <li>Fonds Documentaire</li>
-            <li>Liste des normes</li>
-        </ul>
+        <div class="container">
+        
+          <details>
+            <summary>
+              <div class="button">
+                voir plus
+              </div>
+              <div class="details-modal-overlay"></div>
+            </summary>
+            <div class="details-modal">
+              <div class="details-modal-close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M13.7071 1.70711C14.0976 1.31658 14.0976 0.683417 13.7071 0.292893C13.3166 -0.0976311 12.6834 -0.0976311 12.2929 0.292893L7 5.58579L1.70711 0.292893C1.31658 -0.0976311 0.683417 -0.0976311 0.292893 0.292893C-0.0976311 0.683417 -0.0976311 1.31658 0.292893 1.70711L5.58579 7L0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683417 14.0976 1.31658 14.0976 1.70711 13.7071L7 8.41421L12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071C14.0976 13.3166 14.0976 12.6834 13.7071 12.2929L8.41421 7L13.7071 1.70711Z" fill="black" />
+                </svg>
+              </div>
+              <div class="details-modal-title">
+                <h1>Division Technologie et Développement</h1>
+              </div>
+              <div class="details-modal-content">
+                <h6>Votre partenaire pour vos analyses et vos études pétrolières et environnementales</h6>
+                <p>
+                  La Division Technologies et Développement assure la réalisation des études, synthèses, prestations d'analyses, rapportant notamment aux besoins d'exploration, de production, de transport et de valorisation des hydrocarbures. Tout comme elle se donne pour mission d'introduire et de développer de nouvelles techniques, méthodes d'analyses et d'interprétation. Elle s'attèle également à promouvoir et à développer l'expertise sur les problématiques précises en collaboration avec les institutions scientifiques nationales et internationales. Pour ce faire, la Division Technologies et Développement s'est inscrite dans une démarche d'accréditation selon le référentiel 17025, norme basée sur les principes de management et de fiabilité des résultats pour donner aux essais réalisés le label qualité. Dans cette optique, la Division Technologies et Développement, s'est investie, après agrément des autorités publiques, dans le domaine de l'environnement par la réalisation d'études d'impact. De par les nombreux projets de recherche initiés par le biais de conventions conclues avec les universités et instituts nationaux, la Division Technologies et Développement est un acteur incontournable pour la prise en charge des problématiques induites par l'activité spécifique de l'entreprise.
+                </p>
+                <p>Enfin, dans une double démarche de valorisation de ses métiers, l'entreprise, a confié à Technologies et Développement, la délicate et non moins ardue mission de réaliser un Centre de Conservation et d'Exposition du Patrimoine Géologie et Hydrocarbures (CCEPGH). Cette valorisation vise à créer un effet direct sur l'image de marque de l'entreprise et la valorisation de sa spécificité. Dispositif scientifique et ressources humaines :</p>
+              </div>
+            </div>
+          </details>
         </div>
-
-
-
-
+</div>
+<h4 class="side-tit">Navigation :</h4>
+<div class="side-nav">
+  
+  <a href="#about">Document hse</a>
+  <a href="#services">Document pm</a>
+  <a href="#clients">Document smq</a>
+  <a href="#contact">Fonds Documentaire</a>
+  <button class="dropdown-btn">Liste des normes 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
 
 
 <!-- The Modal -->
@@ -190,10 +283,10 @@
     <div class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span>
-        
+        <h4 class="he-mod">Division Technologie et Développement</h4>
       </div>
       <div class="modal-body">
-        <h4>Division Technologie et Développement</h4>
+        
 <h5>Votre partenaire pour vos analyses et vos études pétrolières et environnementales</h5>
 <p>La Division Technologies et Développement assure la réalisation des études, synthèses,
   prestations d'analyses, rapportant notamment aux besoins d'exploration, de production, de
@@ -297,7 +390,7 @@ var bigBang = new Slide(
 	"Geologie", 
 	" Etudes de Géologie de Réservoir", 
     "Réaliser des études et des synthèses de géologie de laboratoires et de terrain sur la base des aspects sédimentologiques",
-	"https://source.unsplash.com/450x450/?cat", 
+    "./assets/rectangle-2.png", 
 	"#"
 );
 
@@ -375,9 +468,9 @@ function buildSlider(){
         "<h1>" + slideArray[i].title + "</h1>" +
         "<h4>" + slideArray[i].subtitle + "</h4>" +
         "<h5>" + slideArray[i].subcon + "</h5> <br><br><br><br>" +
-        "<a href='#' id='myBtn' onclick='openPopup(\"" + slideArray[i].subcon + "\")'>Voir plus</a>" +
+        "<a href='#' id='myBtn' >Voir plus</a>" +
         "</div>" +
-        "</div>";   
+        "</div>";
         
     }
     
@@ -421,13 +514,6 @@ window.onclick = function(event) {
 }
 
 
-/*-----------------------------------------------------------------
------------------------------------------------------------------
------------------------ SLIDER CONTROLS ---------------------------
------------------------------------------------------------------
------------------------------------------------------------------*/
-
-
 
 // Navigates to the previous slide in the list
 function prevSlide(){
@@ -465,7 +551,6 @@ function nextSlide(){
 		// Otherwise the next slide is the current one plus 1
 		nextSlideIndex = currentSlideIndex + 1;
 	}	
-	
 	// Setup the next slide and current slide for animations
 	document.getElementById("slide" + nextSlideIndex).style.left = "100%";
 	document.getElementById("slide" + currentSlideIndex).style.left = 0;
@@ -478,6 +563,23 @@ function nextSlide(){
 	currentSlideIndex = nextSlideIndex;
 }
     </script>
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+      </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
